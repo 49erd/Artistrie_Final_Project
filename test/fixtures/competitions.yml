@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theme: MyString
+  contest_start: MyString
+  contest_end: MyString
+  submitted_pieces: MyString
+
+two:
+  theme: MyString
+  contest_start: MyString
+  contest_end: MyString
+  submitted_pieces: MyString

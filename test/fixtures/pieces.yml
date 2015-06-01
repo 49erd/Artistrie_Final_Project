@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  type: 
+  image_url: MyString
+  likes: MyString
+
+two:
+  title: MyString
+  artist: MyString
+  type: 
+  image_url: MyString
+  likes: MyString
