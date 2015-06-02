@@ -3,6 +3,18 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
+  <h4>What type of user are you?</h4>
+
+  <label class="radio-inline"><input type="radio" name="choose_user_type" value="1">I will submit art pieces</label>
+  <label class="radio-inline"><input type="radio" name="choose_user_type" value="2">I will not submit art pieces</label>
+
+  
+
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.email_field :username, autofocus: true %>
+  </div>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
