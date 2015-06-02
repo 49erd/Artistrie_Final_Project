@@ -1,3 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+
+          <h4>What type of user are you?</h4>
+          <div class="field">
+            <%= f.radio_button :user_type, "artist" %> I will submit art pieces</br>
+            <%= f.radio_button :user_type, "user" %> I will not submit art pieces
+          </div>
+        </br>
+          <div class="field">
+            <%= f.label :username, "Username" %>
+          </div>
+          <div>
+            <%= f.text_field :username, autofocus: true %>
+          </div>  
+          <br>
+          <div class="field">
+            <%= f.label :email %>
+          </div>
+          <div>
+            <%= f.email_field :email %>
+          </div>
+          <br>
+          <div class="field">
+            <%= f.label :password %>
+            <% if @validatable %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %>
+          </div>
+          <div>
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+          <br>
+          <div class="field">
+            <%= f.label :password_confirmation %>
+          </div>
+          <div>
+            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          </div>
+          <br>
+          <div class="actions">
+            <%= f.submit "Sign up" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<!-- 
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -39,4 +99,4 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links" %> -->
