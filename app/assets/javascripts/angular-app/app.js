@@ -1,5 +1,4 @@
 var app = angular.module('myApp', [
-  // additional dependencies here, such as restangular
   'templates'
 ]);
 
