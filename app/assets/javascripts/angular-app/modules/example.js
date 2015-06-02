@@ -1,5 +1,5 @@
 var exampleApp = angular
-  .module('myApp', [])
+  .module('ArtistrieApp', [])
   .run(function(){
     console.log('exampleApp running');
   });
