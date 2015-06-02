@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150601205718) do
+ActiveRecord::Schema.define(version: 20150602191320) do
 
   create_table "competitions", force: :cascade do |t|
     t.string   "theme"
@@ -49,6 +49,9 @@ ActiveRecord::Schema.define(version: 20150601205718) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "user_type"
+    t.string   "followers"
+    t.integer  "likes_total"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
