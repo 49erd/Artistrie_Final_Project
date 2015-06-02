@@ -1,5 +1,15 @@
-angular.module('myApp').controller("ExampleCtrl", [
+angular.module('myApp')
+
+.controller("ExampleCtrl", [
   '$scope', function($scope){
-    console.log('ExampleCtrl running');
-    $scope.exampleValue = "Hello angular and rails";
-}])
+    $scope.posts = [
+    {
+    	title:'I Get Out',
+    	artist: 'Marley'
+    }, 
+    {
+    	title:'So Much Things To Say',
+    	artist: 'Ms.Hill'
+    }
+    ];
+}]);
