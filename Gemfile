@@ -19,6 +19,11 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
+gem 'rspec-rails'
+
+gem 'bower-rails', '~> 0.9.2'
+gem 'angular-rails-templates'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
