@@ -13,10 +13,13 @@
 		</div>
 	</div>
 	<div ng-app='myApp'>
+	<p>Value from ExampleCtrl:</p>
 		<div ng-controller='ExampleCtrl'>
-	  		<p>Value from ExampleCtrl:</p>
-	  		<p>{{ exampleValue }}</p>
+	  	<div ng-repeat="post in posts">	
+			<p>{{post.title}}</p>
+			<p>{{post.artist}}</p>
+		</div>
 		</div>
 	</div>	
 </body>
-</html>
+</html>	
