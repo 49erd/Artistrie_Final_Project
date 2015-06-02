@@ -5,10 +5,11 @@
 
   <h4>What type of user are you?</h4>
 
-  <label class="radio-inline"><input type="radio" name="choose_user_type" value="1">I will submit art pieces</label>
-  <label class="radio-inline"><input type="radio" name="choose_user_type" value="2">I will not submit art pieces</label>
 
-  
+  <div class="field">
+    <%= f.radio_button :user_type, "artist" %> I will submit pieces
+    <%= f.radio_button :user_type, "user" %> I will not submit pieces
+  </div>
 
   <div class="field">
     <%= f.label :username %><br />
