@@ -5,7 +5,7 @@ class CreateCompetitions < ActiveRecord::Migration
       t.string :theme
       t.date :contest_start
       t.date :contest_end
-      # t.has_many :pieces
+      t.has_many :pieces
 
       t.timestamps null: false
     end

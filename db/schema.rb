@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150602191320) do
   create_table "pieces", force: :cascade do |t|
     t.string   "title"
     t.string   "artist"
-    t.string   "type"
+    t.string   "type_of"
     t.string   "image_url"
     t.integer  "likes"
     t.integer  "user_id"
