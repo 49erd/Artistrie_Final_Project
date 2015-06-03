@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username
   validates :user_type,
             :presence => { :if => 'user_type.nil?' }
+  has_many :pieces
 end
