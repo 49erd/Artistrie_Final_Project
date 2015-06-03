@@ -7,6 +7,8 @@ class CompetitionsController < ApplicationController
 
 	def show
 		@user = current_user
+		@comp = Competition.find(params[:id])
+		@pieces = Pieces.find(where: { comp_id = 2 })
       	
 
       	render :show
