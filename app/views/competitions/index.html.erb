@@ -54,7 +54,7 @@
         <ul>
         <% @competitions.each do |c| %>
           <li>
-            <h4><%= c.theme %></h4>
+            <h4><a href="/competitions/<%= c.id %>"><%= c.theme %></a></h4>
             <p>Start: <%= c.contest_start %></br>
               End: <%= c.contest_end %></p>
           </li>
