@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :profile_pic
       t.string :following
       t.string :liked_pieces
-      t.has_many :pieces
+      # t.has_many :pieces
 
       t.timestamps null: false
     end

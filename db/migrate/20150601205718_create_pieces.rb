@@ -6,7 +6,9 @@ class CreatePieces < ActiveRecord::Migration
       t.string :type
       t.string :image_url
       t.integer :likes
-      t.belongs_to :user
+      t.integer :user_id
+      t.integer :competition_id
+      # t.belongs_to :user
 
       t.timestamps null: false
     end
