@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  class ApplicationController < ActionController::Base
+    include Pundit
+    protect_from_forgery
+  end
+
   protected
   def after_sign_in_path_for(resource_or_scope)
     root_path
@@ -14,13 +19,13 @@ class ApplicationController < ActionController::Base
   end
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :user_type
-  end 
-
-  def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :username
+    devise_parameter_sanitizer.for(:sign_up).push(:user_type, :username)
   end
 
   protect_from_forgery with: :exception
+
+  def contact
+    @user = current_user
+  end
 
 end
