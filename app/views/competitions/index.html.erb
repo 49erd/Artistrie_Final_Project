@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Artistrie</title>
+	<title>Competitions</title>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation"> 
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation"> 
       <div class="container">
           <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -14,7 +14,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-              <a id="homeLink" class="navbar-brand active" href="/">Artistrie</a>
+              <a id="homeLink" class="navbar-brand" href="/">Artistrie</a>
           </div>
 
           <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -22,7 +22,7 @@
                   <li>
                       <a href="/contact">Contact</a>
                   </li>
-                  <li>
+                  <li class="active">
                       <a href="/competitions">Artist Competitions</a>
                   </li>
               </ul>
@@ -41,16 +41,10 @@
   </nav>
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1">
-				<h1>Welcome to Artistrie <small>A place for artists to compete for attention and gain the recognition they deserve</small></h1>
+			<div class="col-xs-12">
+				<h1>Welcome to the Competition Section <small>Here, artists can submit their work for user-chosen themes.  Vote for your favorites, share on Twitter and Facebook; we tally the votes at the end of the competition period and announce which artist has won!</small></h1>
 			</div>
 		</div>
 	</div>
-	<div ng-app='ArtistrieApp'>
-		<div ng-controller='ExampleCtrl'>
-	  		<p>Value from ExampleCtrl:</p>
-	  		<p>{{ exampleValue }}</p>
-		</div>
-	</div>	
 </body>
 </html>

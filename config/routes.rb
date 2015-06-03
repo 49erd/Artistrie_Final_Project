@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  resources :competitions
+
+  resources :users do
+    resources :pieces
+  end
+
   root to: 'default#index'
   get '/contact', to: 'default#contact'
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -4,4 +4,4 @@ angular.module('ArtistrieApp')
 		$scope.addLike() = function (piece) {
 			piece.likes += 1;
 		};
-	}])
+	}]);
