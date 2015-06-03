@@ -42,9 +42,26 @@
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>Welcome to the Competition Section <small>Here, artists can submit their work for user-chosen themes.  Vote for your favorites, share on Twitter and Facebook; we tally the votes at the end of the competition period and announce which artist has won!</small></h1>
+				<h1>Welcome to the Competition Section </h1>
+        <h2>Here, artists can submit their work for user-chosen themes.  Vote for your favorites, share on Twitter and Facebook; we tally the votes at the end of the competition period and announce which artist has won!</h2>
 			</div>
 		</div>
 	</div>
+  <div class=container>
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <h2>Here's a list of current and past competitions:</h2>
+        <ul>
+        <% @competitions.each do |c| %>
+          <li>
+            <h4><%= c.theme %></h4>
+            <p>Start: <%= c.contest_start %></br>
+              End: <%= c.contest_end %></p>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

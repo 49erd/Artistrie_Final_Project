@@ -2,10 +2,14 @@ class CompetitionsController < ApplicationController
 
 	def index
 		@user = current_user
+		@competitions = Competition.all
 	end
 
-	def each_comp
-		@comp = Competition.find(params[:id])
+	def show
+		@user = current_user
+      	
+
+      	render :show
 	end
 
 end
