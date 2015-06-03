@@ -40,7 +40,7 @@
           <%= devise_error_messages! %>
 
           <h4>What type of user are you?</h4>
-          <div class="field">
+          <div class="field" required>
             <%= f.radio_button :user_type, "artist" %> I will submit art pieces</br>
             <%= f.radio_button :user_type, "user" %> I will not submit art pieces
           </div>
